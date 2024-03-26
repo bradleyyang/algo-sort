@@ -9,6 +9,7 @@ import Navbar from './components/Navbar'; // Corrected import
 
 function App() {
   return (<>
+    <div className="fullscreen">
     <Router>
       <Navbar /> {/* Corrected component name */}
       <Routes>
@@ -19,6 +20,7 @@ function App() {
         <Route path='/SelectionSort' element={<SelectionSort />} />
       </Routes>
     </Router>   
+    </div>
     </> 
   );
 }
